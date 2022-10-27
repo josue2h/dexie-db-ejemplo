@@ -1,0 +1,10 @@
+<button (click)="savePerson()">Save</button>
+<button (click)="cleanList()">clean</button>
+
+<ul *ngFor="let item of cursoList">
+  <li>{{ item.id }} {{ item.nameCurso }}</li>
+</ul>
+
+<input #idd type="text" />
+
+<button (click)="getData(idd)">clean</button>
